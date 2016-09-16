@@ -1,0 +1,32 @@
+{
+    "quotesApp": {
+        "quote" : {
+            "home": {
+                "title": "Quotes",
+                "createLabel": "Δημιουργήστε ένα νέο Quote",
+                "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα Quote",
+                "search": "Αναζήτηση για Quote"
+            },
+            "created": "Ένα νέο Quote έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+            "updated": "Ένα Quote έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+            "deleted": "Ένα Quote έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+            "delete": {
+                "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο Quote {{ id }};"
+            },
+            "detail": {
+                "title": "Quote"
+            },
+            "symbol": "Symbol",
+            "last": "Last",
+            "changeamount": "Changeamount",
+            "changepercent": "Changepercent",
+            "sharesoutstanding": "Sharesoutstanding",
+            "ask": "Ask",
+            "bid": "Bid",
+            "volume": "Volume",
+            "tendayaveragevolume": "Tendayaveragevolume",
+            "lasttradetime": "Lasttradetime",
+            "xidsymbol": "Xidsymbol"
+        }
+    }
+}

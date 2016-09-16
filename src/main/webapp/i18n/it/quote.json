@@ -1,0 +1,32 @@
+{
+    "quotesApp": {
+        "quote" : {
+            "home": {
+                "title": "Quotes",
+                "createLabel": "Genera un nuovo Quote",
+                "createOrEditLabel": "Genera o modifica un Quote",
+                "search": "Cerca Quote"
+            },
+            "created": "&Egrave; stato generato un nuovo Quote con identificatore { param }}",
+            "updated": "&Egrave; stato aggiornato Quote identificato da {{ param }}",
+            "deleted": "&Egrave; stato eliminato Quote con identificatore {{ param }}",
+            "delete": {
+                "question": "Sei sicuro di volere eliminare Quote {{ id }}?"
+            },
+            "detail": {
+                "title": "Quote"
+            },
+            "symbol": "Symbol",
+            "last": "Last",
+            "changeamount": "Changeamount",
+            "changepercent": "Changepercent",
+            "sharesoutstanding": "Sharesoutstanding",
+            "ask": "Ask",
+            "bid": "Bid",
+            "volume": "Volume",
+            "tendayaveragevolume": "Tendayaveragevolume",
+            "lasttradetime": "Lasttradetime",
+            "xidsymbol": "Xidsymbol"
+        }
+    }
+}

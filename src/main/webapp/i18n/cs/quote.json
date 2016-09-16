@@ -1,0 +1,32 @@
+{
+    "quotesApp": {
+        "quote" : {
+            "home": {
+                "title": "Quotes",
+                "createLabel": "Vytvořit Quote",
+                "createOrEditLabel": "Vytvořit nebo upravit Quote",
+                "search": "Vyhledat Quote"
+            },
+            "created": "Byl vytvořen potomek entity Quote s identifikátorem {{ param }}",
+            "updated": "Potomek entity Quote s identifikátorem {{ param }} byl upravený.",
+            "deleted": "Potomek entity Quote s identifikátorem {{ param }} bol smazaný.",
+            "delete": {
+                "question": "Jste si jisti, že chcete smazat Quote {{ id }}?"
+            },
+            "detail": {
+                "title": "Quote"
+            },
+            "symbol": "Symbol",
+            "last": "Last",
+            "changeamount": "Changeamount",
+            "changepercent": "Changepercent",
+            "sharesoutstanding": "Sharesoutstanding",
+            "ask": "Ask",
+            "bid": "Bid",
+            "volume": "Volume",
+            "tendayaveragevolume": "Tendayaveragevolume",
+            "lasttradetime": "Lasttradetime",
+            "xidsymbol": "Xidsymbol"
+        }
+    }
+}

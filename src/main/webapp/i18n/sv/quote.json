@@ -1,0 +1,32 @@
+{
+    "quotesApp": {
+        "quote" : {
+            "home": {
+                "title": "Quotes",
+                "createLabel": "Skapa en ny Quote",
+                "createOrEditLabel": "Skapa eller ändra en Quote",
+                "search": "Sök efter Quote"
+            },
+            "created": "En ny Quote är skapad med id {{ param }}",
+            "updated": "En Quote är uppdaterad med id  {{ param }}",
+            "deleted": "En Quote är borttagen med id  {{ param }}",
+            "delete": {
+                "question": "Är du säker på att du vill ta bort Quote {{ id }}?"
+            },
+            "detail": {
+                "title": "Quote"
+            },
+            "symbol": "Symbol",
+            "last": "Last",
+            "changeamount": "Changeamount",
+            "changepercent": "Changepercent",
+            "sharesoutstanding": "Sharesoutstanding",
+            "ask": "Ask",
+            "bid": "Bid",
+            "volume": "Volume",
+            "tendayaveragevolume": "Tendayaveragevolume",
+            "lasttradetime": "Lasttradetime",
+            "xidsymbol": "Xidsymbol"
+        }
+    }
+}

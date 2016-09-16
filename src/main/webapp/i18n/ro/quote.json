@@ -1,0 +1,32 @@
+{
+    "quotesApp": {
+        "quote" : {
+            "home": {
+                "title": "Quotes",
+                "createLabel": "Crează o nouă Quote",
+                "createOrEditLabel": "Crează sau editează o Quote",
+                "search": "Search for Quote"
+            },
+            "created": "O nouă Quote este creată cu identificatorul {{ param }}",
+            "updated": "O Quote este editată cu identificatorul {{ param }}",
+            "deleted": "O Quote este stearsă cu identificatorul {{ param }}",
+            "delete": {
+                "question": "Ești sigur că dorești să stergi Quote {{ id }}?"
+            },
+            "detail": {
+                "title": "Quote"
+            },
+            "symbol": "Symbol",
+            "last": "Last",
+            "changeamount": "Changeamount",
+            "changepercent": "Changepercent",
+            "sharesoutstanding": "Sharesoutstanding",
+            "ask": "Ask",
+            "bid": "Bid",
+            "volume": "Volume",
+            "tendayaveragevolume": "Tendayaveragevolume",
+            "lasttradetime": "Lasttradetime",
+            "xidsymbol": "Xidsymbol"
+        }
+    }
+}

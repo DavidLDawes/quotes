@@ -1,0 +1,32 @@
+{
+    "quotesApp": {
+        "quote" : {
+            "home": {
+                "title": "Quotes",
+                "createLabel": "Создать новый Quote",
+                "createOrEditLabel": "Создать или отредактировать Quote",
+                "search": "Найти Quote"
+            },
+            "created": "Новый Quote создан с идентификатором {{ param }}",
+            "updated": "Quote обновлен с идентификатором {{ param }}",
+            "deleted": "Quote удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Quote {{ id }}?"
+            },
+            "detail": {
+                "title": "Quote"
+            },
+            "symbol": "Symbol",
+            "last": "Last",
+            "changeamount": "Changeamount",
+            "changepercent": "Changepercent",
+            "sharesoutstanding": "Sharesoutstanding",
+            "ask": "Ask",
+            "bid": "Bid",
+            "volume": "Volume",
+            "tendayaveragevolume": "Tendayaveragevolume",
+            "lasttradetime": "Lasttradetime",
+            "xidsymbol": "Xidsymbol"
+        }
+    }
+}

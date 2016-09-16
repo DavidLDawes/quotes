@@ -1,0 +1,32 @@
+{
+    "quotesApp": {
+        "quote" : {
+            "home": {
+                "title": "Quotes",
+                "createLabel": "Quote を追加",
+                "createOrEditLabel": "Quoteを追加または編集",
+                "search": "Search for Quote"
+            },
+            "created": "A new Quote is created with identifier {{ param }}",
+            "updated": "A Quote is updated with identifier {{ param }}",
+            "deleted": "A Quote is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Quote {{ id }}を削除してもよろしいですか？"
+            },
+            "detail": {
+                "title": "Quote"
+            },
+            "symbol": "Symbol",
+            "last": "Last",
+            "changeamount": "Changeamount",
+            "changepercent": "Changepercent",
+            "sharesoutstanding": "Sharesoutstanding",
+            "ask": "Ask",
+            "bid": "Bid",
+            "volume": "Volume",
+            "tendayaveragevolume": "Tendayaveragevolume",
+            "lasttradetime": "Lasttradetime",
+            "xidsymbol": "Xidsymbol"
+        }
+    }
+}

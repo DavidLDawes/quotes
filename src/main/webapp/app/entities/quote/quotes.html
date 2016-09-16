@@ -1,0 +1,80 @@
+<div>
+    <h2 translate="quotesApp.quote.home.title">Quotes</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="quote.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span  translate="quotesApp.quote.home.createLabel">
+                        Create new Quote
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr jh-sort="vm.predicate" ascending="vm.reverse" callback="vm.transition()">
+                    <th jh-sort-by="id"><span translate="global.field.id">ID</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="symbol"><span translate="quotesApp.quote.symbol">Symbol</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="last"><span translate="quotesApp.quote.last">Last</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="changeamount"><span translate="quotesApp.quote.changeamount">Changeamount</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="changepercent"><span translate="quotesApp.quote.changepercent">Changepercent</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="sharesoutstanding"><span translate="quotesApp.quote.sharesoutstanding">Sharesoutstanding</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="ask"><span translate="quotesApp.quote.ask">Ask</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="bid"><span translate="quotesApp.quote.bid">Bid</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="volume"><span translate="quotesApp.quote.volume">Volume</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="tendayaveragevolume"><span translate="quotesApp.quote.tendayaveragevolume">Tendayaveragevolume</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="lasttradetime"><span translate="quotesApp.quote.lasttradetime">Lasttradetime</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="xidsymbol"><span translate="quotesApp.quote.xidsymbol">Xidsymbol</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="quote in vm.quotes track by quote.id">
+                    <td><a ui-sref="quote-detail({id:quote.id})">{{quote.id}}</a></td>
+                    <td>{{quote.symbol}}</td>
+                    <td>{{quote.last}}</td>
+                    <td>{{quote.changeamount}}</td>
+                    <td>{{quote.changepercent}}</td>
+                    <td>{{quote.sharesoutstanding}}</td>
+                    <td>{{quote.ask}}</td>
+                    <td>{{quote.bid}}</td>
+                    <td>{{quote.volume}}</td>
+                    <td>{{quote.tendayaveragevolume}}</td>
+                    <td>{{quote.lasttradetime | date:'medium'}}</td>
+                    <td>{{quote.xidsymbol}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="quote-detail({id:quote.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="quote.edit({id:quote.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="quote.delete({id:quote.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="text-center">
+        <jhi-item-count page="vm.page" total="vm.queryCount" items-per-page="vm.itemsPerPage"></jhi-item-count>
+    </div>
+    <uib-pager total-items="vm.totalItems" ng-model="vm.page" ng-change="vm.transition()"></uib-pager>
+</div>

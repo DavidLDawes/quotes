@@ -1,0 +1,63 @@
+
+<div>
+    <h2><span translate="quotesApp.quote.detail.title">Quote</span> {{vm.quote.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span translate="quotesApp.quote.symbol">Symbol</span></dt>
+        <dd>
+            <span>{{vm.quote.symbol}}</span>
+        </dd>
+        <dt><span translate="quotesApp.quote.last">Last</span></dt>
+        <dd>
+            <span>{{vm.quote.last}}</span>
+        </dd>
+        <dt><span translate="quotesApp.quote.changeamount">Changeamount</span></dt>
+        <dd>
+            <span>{{vm.quote.changeamount}}</span>
+        </dd>
+        <dt><span translate="quotesApp.quote.changepercent">Changepercent</span></dt>
+        <dd>
+            <span>{{vm.quote.changepercent}}</span>
+        </dd>
+        <dt><span translate="quotesApp.quote.sharesoutstanding">Sharesoutstanding</span></dt>
+        <dd>
+            <span>{{vm.quote.sharesoutstanding}}</span>
+        </dd>
+        <dt><span translate="quotesApp.quote.ask">Ask</span></dt>
+        <dd>
+            <span>{{vm.quote.ask}}</span>
+        </dd>
+        <dt><span translate="quotesApp.quote.bid">Bid</span></dt>
+        <dd>
+            <span>{{vm.quote.bid}}</span>
+        </dd>
+        <dt><span translate="quotesApp.quote.volume">Volume</span></dt>
+        <dd>
+            <span>{{vm.quote.volume}}</span>
+        </dd>
+        <dt><span translate="quotesApp.quote.tendayaveragevolume">Tendayaveragevolume</span></dt>
+        <dd>
+            <span>{{vm.quote.tendayaveragevolume}}</span>
+        </dd>
+        <dt><span translate="quotesApp.quote.lasttradetime">Lasttradetime</span></dt>
+        <dd>
+            <span>{{vm.quote.lasttradetime | date:'medium'}}</span>
+        </dd>
+        <dt><span translate="quotesApp.quote.xidsymbol">Xidsymbol</span></dt>
+        <dd>
+            <span>{{vm.quote.xidsymbol}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="quote-detail.edit({id:vm.quote.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm" translate="entity.action.edit"> Edit</span>
+    </button>
+</div>
